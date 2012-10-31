@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="css/index.css" type="text/css" />
+    </head>
+    <body>
+        <div id="application-agenda">
+        </div>
+    </body>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/underscore-min.js" type="text/javascript"></script>
+    <script src="js/backbone.js" type="text/javascript"></script>
+    <script src="js/backbone.localStorage.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="output/lib.js" type="text/javascript"></script>
+    <script src="output/agenda.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            Agenda.init($('#application-agenda'));
+        });
+    </script>

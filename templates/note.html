@@ -1,0 +1,25 @@
+<script type="text/html" id="template-note">
+    <!--
+    <span class="toolbar">
+        <span class="remove">
+            <button class="btn btn-small"><i class="icon-remove"></i></button>
+        </span>
+        <span class="edit">
+            <a class="btn btn-small" href="#note/edit/<%= model.id %>"><i class="icon-edit"></i></a>
+        </span>
+        <span class="btn-group color-chooser">
+            <% print($('#template-color-chooser').html()) %>
+        </span>
+    </span>
+    -->
+    <label class="checkbox inline">
+        <input type="checkbox" class="select" />
+        <i class="icon-check"></i>
+    </label>
+    <h4>
+        <%= model.get("name") %>
+    </h4>
+    <p>
+        <%= model.get("description") %>
+    </p>
+</script>
