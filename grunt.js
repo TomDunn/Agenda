@@ -23,6 +23,7 @@ module.exports = function(grunt) {
                 'templates/note.html',
                 'templates/note-edit.html',
                 'templates/color-chooser.html',
+                'templates/menu-color-chooser.html',
                 'templates/note-selected-context.html',
                 '<close-html-tag>'
             ],
@@ -33,6 +34,7 @@ module.exports = function(grunt) {
                 '<start-self-invoke>',
                 'lib/backbone-helpers.js',
                 'lib/backbone-helpers/views/collection.js',
+                'lib/backbone-helpers/views/menu.js',
                 '<end-self-invoke>'
             ],
             dest: 'output/lib.js'
@@ -50,6 +52,7 @@ module.exports = function(grunt) {
                 'src/view/note-context-selected.js',
                 'src/view/notes.js',
                 'src/view/note-edit.js',
+                'src/view/color-chooser-menu.js',
                 '<end-self-invoke>'
             ],
             dest: 'output/agenda.js'
