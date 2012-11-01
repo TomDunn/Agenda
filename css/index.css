@@ -1,0 +1,141 @@
+body {
+    background-image: url('../imgs/stripe.png');
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#application-agenda {
+    width: 100%;
+    height: 100%;
+}
+
+#content {
+    width: 97%;
+    height: 100%;
+    margin-left: 1%;
+}
+
+#note-selected-context-footer {
+    position:   fixed;
+    bottom:     0px;
+    margin-bottom: 0px;
+    display: none;
+}
+
+#note-selected-context-footer .btn-toolbar {
+    margin-bottom:  0px;
+    margin-top:     0px;
+}
+
+div.note {
+    color: #E6E6E6;
+    padding-left: 6px;
+    padding-top:  1px;
+    border-radius: 15px;
+    background-color: rgba(26, 89, 221, 0.5);
+}
+
+ul.notes {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin:  0;
+}
+
+
+ul.notes li.note h4 {
+    margin-top   : 1px;
+    margin-bottom: 2px;
+}
+
+ul.notes li.note p {
+    margin-top: 0px;
+}
+
+ul.notes li.note label {
+    width: 100%;
+}
+
+ul.notes li.note {
+    color:          black;
+    opacity:        0.8;
+    margin-right:   4px;
+    margin-bottom:  6px;
+    border-radius:  5px;
+    float:          left;
+    height:         120px;
+    max-height:     120px;
+    overflow:       hidden;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    box-shadow:     2px 2px 5px #222;
+}
+
+#note-color-chooser-context-menu {
+    position:       fixed;
+    overflow:       scroll;
+    background-color: white;
+    top:            5%;
+    width:          90%;
+    height:         90%;
+    margin-left:    5%;
+    display:        none;
+}
+
+#note-color-chooser-context-menu ul {
+    list-style:     none;
+}
+
+@media screen and (max-width: 1024px) {
+        ul.notes li.note {
+            width: 100%;
+        }
+
+        ul.notes li.note label {
+            height: 20px;
+        }
+}
+
+@media screen and (min-width: 1025px) {
+        ul.notes li {
+            width: 230px;
+        }
+}
+
+ul.notes li.note.pink {
+    background-color: #d62828;
+}
+
+ul.notes li.note.blue {
+    background-color: #437ef2;
+}
+
+ul.notes li.note.purple {
+    background-color: #8035bd;
+}
+
+ul.notes li.note.orange {
+    background-color: #e85d12;
+}
+
+ul.notes li.note.yellow {
+    background-color: #d9cf11;
+}
+
+ul.notes li span.toolbar {
+    visibility: hidden;
+    right: 0%;
+}
+
+ul.notes li:hover span.toolbar {
+    visibility: visible;
+}
+
+ul.notes li span.toolbar span {
+    cursor: pointer;
+}
+
+ul.dropdown-menu {
+    overflow: scroll;
+}
